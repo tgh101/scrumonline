@@ -49,7 +49,7 @@ foreach($templates as $index=>$template)
     <!--Github Fork Badge -->
     <div class="github-fork-ribbon-wrapper hidden-xs">
       <div class="github-fork-ribbon">
-        <a target="_blank" href="https://github.com/Toxantron/scrumonline">Fork me on GitHub</a>
+        <a target="_blank" href="">Fork me on GitHub</a>
       </div>
     </div>
 <?php }?>
