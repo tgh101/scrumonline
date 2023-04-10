@@ -19,7 +19,7 @@ foreach($templates as $index=>$template)
   <meta charset="utf-8">
   <base href="/">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Scrumpoker Online</title>
+  <title>Scrumpoker Online for SCM Cloud Solution Team</title>
   <meta name="description" content="Scrumpoker online is an open source web implementation of planning poker for scrum teams to determine the complexity of stories. It aims to integrate ticketing systems like Redmine, Github and Gitlab.">  
   <meta name="viewport" content="width=device-width, initial-scale=1">
 

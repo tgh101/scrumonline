@@ -54,7 +54,7 @@ class Template
       new Template("member.html", "templates/member.php"),
       new Template("instructions.html", "templates/instructions.html", "Instructions", true), 
       //new Template("sponsors.html", "templates/sponsors_view.php", "Sponsors"),     
-      new Template("impressum.html", "templates/impressum.html", "Impressum", true),
+      //new Template("impressum.html", "templates/impressum.html", "Impressum", true),
       new Template("removal.html", "templates/removal.html"),
       new Template("404.html", "templates/404.html")
     ];

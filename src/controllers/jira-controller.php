@@ -7,7 +7,13 @@ class JiraController extends ControllerBase
 {
     public function getIssues()
     {
-        $parameters = array_merge((array) $jiraConfiguration, $_POST);
+        include(dirname(__FILE__) . '/../config.php');
+        
+        //$parameters = array_replace_recursive((array) $defaultparams, $_POST);
+        $parameters['base_url'] = $_POST['base_url'] ? $_POST['base_url'] : $jiraConfiguration['base_url'];
+        $parameters['jql'] = $_POST['jql'] ? $_POST['jql'] : $jiraConfiguration['jql'];
+        $parameters['username'] = $_POST['username'] ? $_POST['username'] : $jiraConfiguration['username'];
+        $parameters['password'] = $_POST['password'] ? $_POST['password'] : $jiraConfiguration['password'];
 
         $jiraUrl = $parameters['base_url'] . '/rest/api/2/search?';
         if ($parameters['jql']) {
