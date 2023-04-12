@@ -10,7 +10,7 @@ class SessionController extends ControllerBase
   {
     // Create query finding all active sessions
     $query = $this->entityManager->createQuery('SELECT s.id, s.name, s.isPrivate, s.token, count(m.id) memberCount  FROM Session s LEFT JOIN s.members m WHERE s.lastAction > ?1 GROUP BY s.id');
-    $query->setParameter(1, new DateTime('-1 hour'));
+    $query->setParameter(1, new DateTime('-30 days'));
     $sessions = $query->getArrayResult();
 
     // Determine password requirement for each session
